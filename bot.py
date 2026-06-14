@@ -18,7 +18,7 @@ GEMINI_KEY     = os.environ["GEMINI_API_KEY"]
 INTERVAL_HOURS = int(os.getenv("INTERVAL_HOURS", "4"))
 
 genai.configure(api_key=GEMINI_KEY)
-model = genai.GenerativeModel("gemini-1.5-flash")
+model = genai.GenerativeModel("gemini-2.0-flash")
 
 SYSTEM_PROMPT = """تو یک شاعر و نویسنده‌ی ایرانی هستی با روحی ظریف و غمگین.
 هر بار که می‌نویسی، یک متن کاملاً منحصربه‌فرد خلق کن.
